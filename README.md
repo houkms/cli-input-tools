@@ -6,7 +6,7 @@ This repository provides some scripts helping to generate input files for autore
 This script lists all the readme file paths in azure-rest-api-specs/specifications
 
 #### Usgae:
-```bash
+``` bash
   python3 list_readme_path_of_all_services.py path [service = service] [manager = manager]
 ```
 
@@ -25,7 +25,7 @@ This script lists all the readme file paths in azure-rest-api-specs/specificatio
 This script lists all the readme file paths in updated services
 
 #### Usage:
-```  
+``` bash
   python3 list_readme_path_of_updated_services.py path branch1 branch2
 ```
 #### Required:
@@ -41,7 +41,7 @@ This script lists all the readme file paths in updated services
 This script finds all the tags in a readme file
 
 #### Usage:
-```
+``` bash
   python3 get_tags_from_readme.py path
 ```
 
@@ -56,7 +56,7 @@ This script finds all the tags in a readme file
 This script adds cli snippets for the readme file
 
 #### Usage:
-```
+``` bash
   python3 add_snippets_for_readme.py path
 ```
 #### Required:
