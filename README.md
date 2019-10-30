@@ -5,7 +5,7 @@ This repository provides some scripts helping to generate input files for autore
 ## list_readme_path_of_all_services.py
 This script lists all the readme file paths in azure-rest-api-specs/specifications
 
-#### Usgae:
+#### Usage:
 ``` bash
   python3 list_readme_path_of_all_services.py path [service = service] [manager = manager]
 ```
