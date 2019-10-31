@@ -32,8 +32,16 @@ def get_tags_from_readme(file_path):
 		for line in file.readlines():
 			line.strip()
 			if len(line) > 8 and line[:8] == '### Tag:':
-				tags_list.append(line[8:].strip())
+				tag = line[8:].strip()
+				if tag_filter(tag):
+					tags_list.append(tag)
 	return tags_list
+
+
+def tag_filter(tag):
+	if tag.find(' ') != -1:
+		return False
+	return True
 
 
 def main():
