@@ -58,6 +58,20 @@ def add_snippets_for_readme(file_path):
 		file.write('  package-name: azure-mgmt-' + get_service_name(file_path) + '\n')
 		file.write('  clear-output-folder: false\n')
 		file.write('```\n')
+
+		file.write('\n')
+		file.write('## terraform\n\n')
+		file.write('These settings apply only when `--terraform` is specified on the command line.\n\n')
+		file.write('``` yaml $(terraform)\n')
+		file.write('terraform:\n')
+		file.write('  cli_name: ' + get_service_name(file_path) + '\n')
+		file.write('  azure_arm: true\n')
+		file.write('  license_header: MICROSOFT_MIT_NO_VERSION\n')
+		file.write('  payload_flattening_threshold: 2\n')
+		file.write('  namespace: azure.mgmt.' + get_service_name(file_path) + '\n')
+		file.write('  package_name: azure-mgmt-' + get_service_name(file_path) + '\n')
+		file.write('  clear_output_folder: false\n')
+		file.write('```\n')
 	return True
 
 
