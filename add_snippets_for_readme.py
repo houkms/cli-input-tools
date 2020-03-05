@@ -38,7 +38,7 @@ def get_service_name(file_path):
 	with open(file_path, 'r') as file:
 		service_line = file.readline()
 		service_names = service_line[2:].strip().split(' ')
-	return ('').join([elem.lower() for elem in service_names])
+	return ('').join([elem for elem in service_names])
 
 
 def add_snippets_for_readme(file_path):
